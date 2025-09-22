@@ -22,7 +22,7 @@ console.log(typeof undef);
 let nil = null;
 console.log(nil);
 console.log(typeof nil);
-let array = [1, 2 'hello', 'world', true, [1, 2, 3]];
+let array = [1, 2, 'hello', 'world', true, [1, 2, 3]];
 console.log(array);
 console.log(typeof arrar);
 let obj = {

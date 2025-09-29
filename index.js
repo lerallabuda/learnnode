@@ -1,32 +1,64 @@
-let num = 10;
-if (num > 10) {
-    console.log('bigger than 10');
-} else if (num === 10){
-    console.log('equal to 10');
-}
-else {
-    console.log('smaller than 10');
+let num = 1;
+if(num > 10) {
+    console.log('Bigger than 10');
+} else if (num === 10) {
+    console.log('Equal to 10');
+} else {
+    console.log('Smaller than 10');
 }
  
-let day = new Date("2025-09-28").getDay();
+let day = new Date("2025-09-25").getDay();
 console.log(day);
  
 if(day === 1) {
-console.log('Esmaspäev');
+    console.log('Esmaspäev');
 } else if (day === 2) {
-console.log('Teisipäev');
+    console.log('Teisipäev');
 } else if (day === 3) {
-console.log('Kolmapäev');
+    console.log('Kolmapäev');
 } else if (day === 4) {
-console.log('Neljapäev');
-} else if (day === 5) {
-console.log('Reede');
-} else if (day === 6) {
-console.log('Laupäev');
+    console.log('Neljapäev');
+} else if (day === 5 || day === 6) {
+    console.log('Pidupäev');
 } else if (day === 0) {
-console.log('Pühapäev');
+    console.log('Pühapäev');
 } else {
-console.log('Imelikpäev');
+    console.log('Imelikpäev');
 }
+ 
+switch(day) {
+    case 1:
+        console.log('Esmaspäev');
+        break;
+    case 2:
+        console.log('Teisipäev');
+        break;
+    case 3:
+        console.log('Kolmapäev');
+        break;
+    case 4:
+        console.log('Neljapäev');
+        break;
+    case 5:
+    case 6:
+        console.log('Pidupäev');
+        break;
+    case 0:
+        console.log('Pühapäev');
+        break;
+    default:
+        console.log('Imelikpäev')
+}
+ 
+let days = ['Pühapäev', 'Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Pidupäev', 'Pidupäev'];
+console.log(days[day]);
+ 
+num = 11;
+answer = num > 10 ? 'Suurem' : 'Väiksem';
+console.log(answer);
+ 
+let value = 'asdasd';
+answer = value ?? 'Something else';
+console.log(answer);
  
  
